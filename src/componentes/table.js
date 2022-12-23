@@ -9,11 +9,11 @@ const Table = ({ tasks, checkTask, completedTask = false }) => {
   };
 
   return (
-    <table>
+    <table className="table table-dark table-striped table-bordered border-secondary table-hover ">
       <thead>
-        <tr>
+        <tr className="table-success">
           <td>
-            <h2>Tareas</h2>
+            <h4 className="d-flex justify-content-center ">Tareas</h4>
           </td>
         </tr>
       </thead>

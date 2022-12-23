@@ -12,15 +12,20 @@ export const TaskCreator = ({ createTask }) => {
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="my-2 row">
+      <div className="col-9">
       <input
         type="text"
         placeholder="Ingrese su tarea"
         value={newTask}
         onChange={(e) => setnewTask(e.target.value)}
+        className='form-control'
       />
-
-      <button>Guardar tarea</button>
+      </div>
+      <div className="col-3">
+      <button className="btn btn-success">Guardar</button>
+      </div>
+      
     </form>
   );
 };
