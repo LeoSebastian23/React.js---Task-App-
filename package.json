@@ -40,5 +40,9 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "tailwindcss": "^3.2.6"
+  }
 }
