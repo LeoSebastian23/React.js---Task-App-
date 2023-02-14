@@ -43,7 +43,7 @@ function App() {
 
   //------------------------------------------------------------------------------------------//
   return (
-    <div className="bg-gradient-to-r from-sky-500 to-indigo-500 vh-100">
+    <div className=" w-full min-h-screen bg-gradient-to-r from-sky-500 to-indigo-500 vh-100 ">
       
       <Container>
         <h1 className=" bg-lime-50 rounded-md text-center text-teal-700 p-2 mb-5 "> GESTOR DE TAREAS</h1>
