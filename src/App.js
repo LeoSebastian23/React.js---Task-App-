@@ -43,10 +43,9 @@ function App() {
 
   //------------------------------------------------------------------------------------------//
   return (
-    <div className="bg-gradient-to-r from-sky-500 to-indigo-500 vh-100">
-      
+    <div className="bg-gradient-to-r from-green-800 to-lime-800 vh-100">
       <Container>
-        <h1 className=" bg-lime-50 rounded-md text-center text-teal-700 p-2 mb-5 "> GESTOR DE TAREAS</h1>
+        <h1 className="bg-lime-50 rounded-md text-center text-teal-700 p-2 "> GESTOR DE TAREAS</h1>
         <TaskCreator createTask={createTask} />
         <Table tasks={tasksList} checkTask={checkTask} />
         <Visibility
@@ -64,7 +63,6 @@ function App() {
         )}
       </Container>
     </div>
-    
   );
 }
 export default App;

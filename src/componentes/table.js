@@ -9,16 +9,16 @@ const Table = ({ tasks, checkTask, completedTask = false }) => {
   };
 
   return (
-    <table className="table table-dark table-striped table-bordered border-secondary table-hover ">
+    <table className="table table-striped table-hover">
       <thead>
-        <tr className="table-success">
+        <tr>
           <td>
-            <h4 className="d-flex justify-content-center ">Tareas</h4>
+            <h4 className="d-flex justify-content-center bg-lime-200 rounded-xl p-2 text-teal-800">Tareas</h4>
           </td>
         </tr>
       </thead>
 
-      <tbody>{TableRows(completedTask)}</tbody>
+      <tbody className="table-success">{TableRows(completedTask)}</tbody>
     </table>
   );
 };

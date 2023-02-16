@@ -7,7 +7,7 @@ export const Visibility = ({setCompletedTask, CleanerTask,isVisibili}) => {
     } 
 
   return (
-    <div className='d-flex justify-content-between align-items-center bg-secondary text-white text-center p-2 border-secondary'>
+    <div className='d-flex justify-content-between align-items-center bg-secondary text-white text-center p-2 border-secondary rounded-lg'>
         <div className='form-check form-switch'>
 
         <input
@@ -17,7 +17,7 @@ export const Visibility = ({setCompletedTask, CleanerTask,isVisibili}) => {
           onChange={(e) => setCompletedTask(e.target.checked)}
         />{" "}
         </div>
-        <label class="fw-bolder">Mostrar tareas realizadas</label>
+        <label class="fw-bolder ">Mostrar tareas realizadas</label>
 
         <button onClick={cleaner} className="btn btn-danger btn">Limpiar</button>
     </div>
