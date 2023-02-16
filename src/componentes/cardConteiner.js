@@ -9,12 +9,10 @@ const Table = ({ tasks, checkTask, completedTask = false }) => {
   };
 
   return (
-    <div className="bg-slate-600 ">
-
-          <div>
-            <h4 className="d-flex justify-content-center bg-slate-50 ">Tareas</h4>
+    <div className="col-md-6 pb-2 bg-slate-800 rounded-lg ">
+          <div className="">
+            <h3 className="text-center text-slate-100 rounded-lg py-1 ">LISTA DE TAREAS</h3>
           </div>
-
       <div className="flex flex-wrap justify-center">
         {TableRows(completedTask)}
       </div>

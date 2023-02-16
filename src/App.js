@@ -1,7 +1,7 @@
 import { TaskCreator } from "./componentes/taskCreator";
 import React, { useState, useEffect } from "react";
 import { Visibility } from "./componentes/visibility";
-import Table from "./componentes/table";
+import Table from "./componentes/cardConteiner";
 import { Container } from "./componentes/container";
 
 function App() {
@@ -43,13 +43,10 @@ function App() {
 
   //------------------------------------------------------------------------------------------//
   return (
-    <div className=" w-full min-h-screen bg-gradient-to-r from-sky-500 to-indigo-500 vh-100 ">
-      
       <Container>
-        <h1 className=" bg-lime-50 rounded-md text-center text-teal-700 p-2 mb-5 "> GESTOR DE TAREAS</h1>
         <TaskCreator createTask={createTask} />
         <Table tasks={tasksList} checkTask={checkTask} />
-        <Visibility
+        {/* <Visibility
           setCompletedTask={setCompletedTask}
           CleanerTask={CleanerTask}
           isVisibili={completedTask}
@@ -61,10 +58,8 @@ function App() {
             checkTask={checkTask}
             completedTask={completedTask}
           />
-        )}
+        )} */}
       </Container>
-    </div>
-    
   );
 }
 export default App;
