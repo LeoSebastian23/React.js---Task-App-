@@ -6,6 +6,8 @@ It developed with the purpose of reviewing concepts and features of React.js suc
 It used to practice TailwindCSS in the styles.
 Also learn and practice how to deploy a React web application for free using Github Pages.
 
+###It is thought and designed for mobile applications being fully responsive.
+
 ## Link
 
 https://leosebastian23.github.io/React.js---Task-App-/
