@@ -12,15 +12,17 @@ export const TaskCreator = ({ createTask }) => {
     
   };
   return (
-    <form onSubmit={handleSubmit} className="bg-slate-300 flex flex-col items-center">
-      
+    <div className="col-md-6 pb-4">
+    <form onSubmit={handleSubmit} className="bg-slate-700 flex flex-col items-center m-6 p-1 rounded-lg lg:w-1/2">
+      <h3 className="text-white">CREAR TAREA</h3>
         <textarea
           type="text"
           placeholder="Ingrese su tarea"
           value={newTask}
           onChange={(e) => setnewTask(e.target.value)}
-          className="caret-pink-500 w-50 m-1 resize-y rounded-md"
+          className="caret-slate-900 m-1 rounded-md"
           rows="5"
+          color="black"
         />
         {/* <label>
               <span class="text-gray-700">Selecciona el color</span>
@@ -31,5 +33,6 @@ export const TaskCreator = ({ createTask }) => {
         <button class="px-4 py-1 m-2 rounded-full bg-sky-500 hover:bg-sky-700 hover:text-white ">Guardar</button>
       </div>
     </form>
+    </div>
   );
 };

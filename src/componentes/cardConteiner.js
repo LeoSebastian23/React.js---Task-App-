@@ -9,17 +9,15 @@ const Table = ({ tasks, checkTask, completedTask = false }) => {
   };
 
   return (
-    <table className="table table-dark table-striped table-bordered border-secondary table-hover ">
-      <thead>
-        <tr className="table-success">
-          <td>
-            <h4 className="d-flex justify-content-center ">Tareas</h4>
-          </td>
-        </tr>
-      </thead>
+    <div className="col-md-6 pb-2 bg-slate-800 rounded-lg ">
+          <div className="">
+            <h3 className="text-center text-slate-100 rounded-lg py-1 ">LISTA DE TAREAS</h3>
+          </div>
+      <div className="flex flex-wrap justify-center">
+        {TableRows(completedTask)}
+      </div>
 
-      <tbody>{TableRows(completedTask)}</tbody>
-    </table>
+    </div>
   );
 };
 

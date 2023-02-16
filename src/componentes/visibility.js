@@ -7,17 +7,16 @@ export const Visibility = ({setCompletedTask, CleanerTask,isVisibili}) => {
     } 
 
   return (
-    <div className='d-flex justify-content-between align-items-center bg-secondary text-white text-center p-2 border-secondary'>
-        <div className='form-check form-switch'>
-
+    <div className='bg-gray-700 col-md-6 pb-4 rounded-lg flex flex-col justify-around items-center justify-items-center'>
+        <div className='form-check form-switch '>
         <input
-        className='form-check-input'
+         className='form-check-input'
           checked={isVisibili}
           type="checkbox"
           onChange={(e) => setCompletedTask(e.target.checked)}
         />{" "}
         </div>
-        <label class="fw-bolder">Mostrar tareas realizadas</label>
+        <label class="text-yellow-50 font-medium">Mostrar tareas realizadas</label>
 
         <button onClick={cleaner} className="btn btn-danger btn">Limpiar</button>
     </div>
