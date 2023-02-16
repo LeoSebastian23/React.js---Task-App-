@@ -2,6 +2,10 @@
 
 This project is created with Javascript and stored in Github Pages for the app.
 
+It developed with the purpose of reviewing concepts and features of React.js such as useState, useEffect, component creation, LocalStorage.
+It used to practice TailwindCSS in the styles.
+Also learn and practice how to deploy a React web application for free using Github Pages.
+
 ## Link
 
 https://leosebastian23.github.io/React.js---Task-App-/
